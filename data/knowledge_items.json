@@ -1,0 +1,50 @@
+[
+  {
+    "knowledge_id": "ki_1001",
+    "title": "SOP - App startup connect timeout troubleshooting",
+    "knowledge_type": "sop",
+    "scene_type": "troubleshooting",
+    "module": "app",
+    "version_min": "v2.2.0",
+    "version_max": "v2.4.0",
+    "deployment_modes": ["single", "cluster"],
+    "tags": ["startup", "timeout", "db"],
+    "content": "When app startup shows connect timeout: check DB host/port, validate network policy, then verify DB readiness and connection limits."
+  },
+  {
+    "knowledge_id": "ki_1002",
+    "title": "SOP - Gateway 502 troubleshooting",
+    "knowledge_type": "sop",
+    "scene_type": "troubleshooting",
+    "module": "gateway",
+    "version_min": "v2.3.0",
+    "version_max": "v2.4.0",
+    "deployment_modes": ["cluster"],
+    "tags": ["502", "upstream", "routing"],
+    "content": "For gateway 502: inspect upstream app health, verify service discovery entries, then validate route target and timeout settings."
+  },
+  {
+    "knowledge_id": "ki_1003",
+    "title": "Case - Redis connection refused after deployment",
+    "knowledge_type": "case",
+    "scene_type": "troubleshooting",
+    "module": "redis",
+    "version_min": "v2.1.0",
+    "version_max": "v2.4.0",
+    "deployment_modes": ["single", "cluster", "offline"],
+    "tags": ["redis", "refused", "config"],
+    "content": "Connection refused is usually caused by wrong redis endpoint, port closed by policy, or redis service not started."
+  },
+  {
+    "knowledge_id": "ki_1004",
+    "title": "SOP - Database timeout and authentication troubleshooting",
+    "knowledge_type": "sop",
+    "scene_type": "troubleshooting",
+    "module": "db",
+    "version_min": "v2.0.0",
+    "version_max": "v2.4.0",
+    "deployment_modes": ["all"],
+    "tags": ["database", "timeout", "auth"],
+    "content": "If DB timeout/auth errors occur: confirm endpoint reachability, username/password, DB listener, and whitelist rules."
+  }
+]
